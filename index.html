@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="side-bar">
+      <div class="side-bar__container-top">
+        <div class="side-img-container">
+          <img
+            src="/images/profile-img.jpg"
+            alt="Profile Image"
+            class="side-bar__img"
+          />
+        </div>
+        <h2 class="side-bar__title">Harry</h2>
+        <div class="social-media">
+          <a
+            href="https://twitter.com/"
+            class="social-link"
+            aria-label="Twitter"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+              aria-hidden="true"
+            >
+              <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            class="social-link"
+            aria-label="Facebook"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="10"
+              viewBox="0 0 320 512"
+              aria-hidden="true"
+            >
+              <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+              aria-hidden="true"
+            >
+              <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.skype.com/"
+            class="social-link"
+            aria-label="Skype"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+              aria-hidden="true"
+            >
+              <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+              aria-hidden="true"
+            >
+              <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="side-bar__container-bottom">
+        <ul class="side-bar__list">
+          <li class="side-bar__item">
+            <a href="#" class="side-bar__link" aria-label="Home">
+              <img
+                src="icons/home.svg"
+                class="side-bar__link-icon"
+                alt="Home"
+              />
+              Home
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </body>
+</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="side-bar">
+      <div class="side-bar__container-top">
+        <div class="side-img-container">
+          <img
+            src="/images/profile-img.jpg"
+            alt="side img"
+            class="side-bar__img"
+          />
+        </div>
+        <h2 class="side-bar__title">Harry</h2>
+        <div class="social-media">
+          <a href="https://twitter.com/" class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path
+                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="10"
+              viewBox="0 0 320 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/" class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.skype.com/" class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path
+                d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path
+                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="side-bar__container-bottom">
+        <ul class="side-bar__list">
+          <li class="side-bar__item">
+            <a href="#" class="side-bar__link"
+              ><img src="icons/home.svg" class="side-bar__link-icon" />Home</a
+            >
+          </li>
+          <li class="side-bar__item">
+            <a href="#" class="side-bar__link"
+              ><img src="icons/user.svg" class="side-bar__link-icon" />About</a
+            >
+          </li>
+          <li class="side-bar__item">
+            <a href="#" class="side-bar__link"
+              ><img src="icons/file.svg" class="side-bar__link-icon" />Resume</a
+            >
+          </li>
+          <li class="side-bar__item">
+            <a href="#" class="side-bar__link"
+              ><img
+                src="icons/book-open.svg"
+                class="side-bar__link-icon"
+              />Portfolio</a
+            >
+          </li>
+          <li class="side-bar__item">
+            <a href="#" class="side-bar__link"
+              ><img
+                src="icons/server.svg"
+                class="side-bar__link-icon"
+              />Service</a
+            >
+          </li>
+          <li class="side-bar__item">
+            <a href="#" class="side-bar__link"
+              ><img
+                src="icons/email.svg"
+                class="side-bar__link-icon"
+              />Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- <footer class="side-bar__footer">
+        <p class="side-bar__footer-text">
+          &copy; 2021
+          <span class="side-bar__footer-text--bold">Harry</span><br />
+          Designed by
+          <a href="#" class="side-bar__footer-text--highlight">Shailendra</a>
+        </p>
+      </footer> -->
+    </aside>
+    <main>
+      <section class="hero-section">
+        <div class="hero-section__heading-container">
+          <h1 class="hero-section__heading">Harry</h1>
+          <h2 class="hero-section__secondary-heading">
+            I'm
+            <span class="hero-section__secondary-heading--hightlight"
+              >Photographer</span
+            >
+          </h2>
+        </div>
+      </section>
+      <section class="section section-about">
+        <h2 class="section-heading">About</h2>
+        <div class="section-content">
+          <p class="section-content__text general-size general-margin-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, voluptate, quibusdam, quia voluptas quod quos voluptatem
+            quas quibusdam, quia voluptas quod quos voluptatem quas
+          </p>
+          <div class="section-about__img-container">
+            <div class="section-about__img-container__left">
+              <img
+                src="images/profile-img.jpg"
+                alt="about img"
+                class="section-content__img"
+              />
+            </div>
+            <div class="section-about__img-container__right">
+              <h3 class="sub-section-heading">
+                UI/UX Designer & Web Developer.
+              </h3>
+              <p
+                class="section-content__text italic general-size general-margin-1"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, voluptate, quibusdam, quia voluptas quod
+                quos voluptatem quas quibusdam, quia voluptas quod quos
+                voluptatem quas.
+              </p>
+              <div class="section-about__list-container general-margin-2">
+                <ul class="section-about__list general-size">
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">Birthday:</span> 1 May 1995
+                  </li>
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">Website:</span> www.example.com
+                  </li>
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">Phone:</span> +123 456 7890
+                  </li>
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">City:</span> New York, USA
+                  </li>
+                </ul>
+
+                <ul class="section-about__list general-size">
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">Age:</span> 30
+                  </li>
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">Degree:</span> Master
+                  </li>
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">PhEmailone:</span> email@example.com
+                  </li>
+                  <li class="section-about__list-item">
+                    <image
+                      src="icons/chevron-right.svg"
+                      class="section-about__list-icon"
+                    />
+                    <span class="bold">Freelance:</span> Available
+                  </li>
+                </ul>
+              </div>
+              <p class="general-size">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus quasi modi laborum impedit amet itaque reiciendis
+                ipsam praesentium reprehenderit iure, commodi molestiae
+                repudiandae quis aut ex facilis asperiores nihil dicta ullam
+                voluptate voluptas nesciunt assumenda nam! Dolorum officia
+                debitis sunt enim consequuntur recusandae temporibus laudantium.
+                Mollitia, quo ex! Qui, repudiandae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-facts">
+        <h2 class="section-heading">Facts</h2>
+        <div class="section-content">
+          <p class="section-content__text general-size general-margin-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui
+            amet ipsam, beatae minus quod! Similique distinctio sed, voluptas
+            perferendis, adipisci ratione magni corrupti minus, rem totam animi
+            mollitia vero.
+          </p>
+          <div class="section-facts__container">
+            <div class="section-facts__fact">
+              <img
+                src="icons/happy.svg"
+                alt="Emoji Happy"
+                class="section-facts__fact-img"
+              />
+              <div class="section-facts__fact-item">
+                <h3 class="section-facts__fact-item-number">232</h3>
+                <div class="section-facts__fact-item-text">
+                  <p class="section-facts__fact-item-desc bold">
+                    Happy Clients
+                  </p>
+                  <p class="section-facts__fact-item-desc">Lorem, ipsum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-facts__fact">
+              <img
+                src="icons/book-album.svg"
+                alt="Emoji Happy"
+                class="section-facts__fact-img"
+              />
+              <div class="section-facts__fact-item">
+                <h3 class="section-facts__fact-item-number">521</h3>
+                <div class="section-facts__fact-item-text">
+                  <p class="section-facts__fact-item-desc bold">Projects</p>
+                  <p class="section-facts__fact-item-desc">
+                    desgd eveniet<br />
+                    ullam, sunt deserunt
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section-facts__fact">
+              <img
+                src="icons/headset.svg"
+                alt="Emoji Happy"
+                class="section-facts__fact-img"
+              />
+              <div class="section-facts__fact-item">
+                <h3 class="section-facts__fact-item-number">1453</h3>
+                <div class="section-facts__fact-item-text">
+                  <p class="section-facts__fact-item-desc bold">
+                    Hours of Support
+                  </p>
+                  <p class="section-facts__fact-item-desc">
+                    amet consectetur<br />
+                    adipisicing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section-facts__fact">
+              <img
+                src="icons/happy.svg"
+                alt="Emoji Happy"
+                class="section-facts__fact-img"
+              />
+              <div class="section-facts__fact-item">
+                <h3 class="section-facts__fact-item-number">32</h3>
+                <div class="section-facts__fact-item-text">
+                  <p class="section-facts__fact-item-desc bold">Hard Workers</p>
+                  <p class="section-facts__fact-item-desc">
+                    Lorem, ipsum. <br />alam
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="section-content">
+          <p class="section-content__text general-size general-margin-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            quod explicabo perferendis nisi expedita nemo error iste, tempore
+            fugiat est! Iusto veritatis soluta cum dolores nulla officia culpa
+            quis optio!
+          </p>
+          <div class="section-skills__skills-container">
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">HTML</span>
+                <span class="section-skills__skill-percent">100%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--html"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">PHP</span>
+                <span class="section-skills__skill-percent">80%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--php"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">CSS</span>
+                <span class="section-skills__skill-percent">90%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--css"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">WORDPRESS/CMS</span>
+                <span class="section-skills__skill-percent">90%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--wordpress"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">JAVASCRIPT</span>
+                <span class="section-skills__skill-percent">75%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--javascript"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">PHOTOSHOP</span>
+                <span class="section-skills__skill-percent">55%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--photoshop"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-resume">
+        <h2 class="section-heading">Resume</h2>
+        <div class="section-content">
+          <div class="section-resume__block general-margin-1">
+            <h3 class="section-resume__block-heading">Summary</h3>
+            <div class="section-resume__block-item">
+              <h4 class="section-resume__block-item-heading">Harry</h4>
+              <div class="section-resume__block-item-content">
+                <p class="italic general-size general-margin-2">
+                  Innovative and deadline-driven Graphic Designer with 3+ years
+                  of experience designing and developing user-centered
+                  digital/print marketing material from initial concept to
+                  final, polished deliverable.
+                </p>
+                <ul class="section__block-item-list">
+                  <li class="section__block-item-list">
+                    Portland par 127, Orlando, FL
+                  </li>
+                  <li class="section__block-item-list">(123) 456-7891</li>
+                  <li class="section__block-item-list">
+                    alice.barkley@example.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-resume__block">
+            <h3 class="section-resume__block-heading">Education</h3>
+            <div class="section-resume__block-item">
+              <h4 class="section-resume__block-item-heading">
+                Master of Fine Arts & Graphic Design
+              </h4>
+              <div class="section-resume__block-item--badge">
+                <span
+                  class="section-resume__block-item--badge-text general-size"
+                >
+                  2015 - 2016
+                </span>
+              </div>
+              <div class="section-resume__block-item-content">
+                <p class="italic general-size general-margin-2">
+                  Innovative and deadline-driven Graphic Designer with 3+ years
+                  of experience designing and developing user-centered
+                  digital/print marketing material from initial concept to
+                  final, polished deliverable.
+                </p>
+                <ul class="section__block-item-list">
+                  <li class="section__block-item-list">
+                    Portland par 127, Orlando, FL
+                  </li>
+                  <li class="section__block-item-list">(123) 456-7891</li>
+                  <li class="section__block-item-list">
+                    alice.barkley@example.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-portfolio">
+        <h2 class="section-heading">Portfolio</h2>
+        <div class="section-content">
+          <p class="general-size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+            esse qui odio eveniet, commodi quae! Ducimus delectus saepe illum,
+            voluptatibus quis in, ullam provident vero fuga iure quos! Rerum,
+            quisquam!
+          </p>
+          <div class="section-portfolio__tab_btns">
+            <button
+              class="section-portfolio__tab-btn section-portfolio__tab-btn--checked"
+            >
+              All
+            </button>
+            <button class="section-portfolio__tab-btn">App</button>
+            <button class="section-portfolio__tab-btn">Card</button>
+            <button class="section-portfolio__tab-btn">Web</button>
+          </div>
+          <div class="section-portfolio__img-container">
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-1.jpg" alt="First Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-2.jpg" alt="Second Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-3.jpg" alt="Third Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-4.jpg" alt="Fourth Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-5.jpg" alt="Fifth Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-6.jpg" alt="Sixth Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-7.jpg" alt="Seventh Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-8.jpg" alt="Eight Image" />
+            </div>
+            <div class="section-portfolio__img-item">
+              <img src="images/portfolio/portfolio-9.jpg" alt="Ninth Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-services">
+        <h2 class="section-heading">Services</h2>
+      </section>
+      <section class="section section-testimonials">
+        <h2 class="section-heading">Testimonials</h2>
+        <div class="section-content">
+          <p class="general-size general-margin-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+            sed fuga in maiores hic ex natus enim aliquam quae ullam possimus ea
+            quaerat similique eum saepe vel placeat a optio?
+          </p>
+
+          <div class="section-testimonials__testimonials-container">
+            <div class="section-testimonials__testimonial">
+              <p
+                class="section-testimonials__testimonial-text general-size italic"
+              >
+                <img src="icons/left-quote.svg" alt="left-icon" />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, voluptate, quibusdam, quia voluptas quod
+                voluptatem quas.
+                <img src="icons/right-quote.svg" alt="right-icon" />
+              </p>
+              <img
+                src="images/testimonials/testimonials-5.jpg"
+                alt="First Testimonial"
+                class="section-testimonials__testimonial-img"
+              />
+              <div class="section-testimonials__group">
+                <h4 class="section-testimonials__testimonial-name">
+                  John Larson
+                </h4>
+                <p class="section-testimonials__testimonial-position">
+                  Entrepreneur
+                </p>
+              </div>
+            </div>
+            <div class="section-testimonials__testimonial">
+              <p
+                class="section-testimonials__testimonial-text general-size italic"
+              >
+                <img src="icons/left-quote.svg" alt="left-icon" />
+                Quisquam voluptatum, voluptate, quibusdam, quia voluptas quod
+                quos voluptatem quas quibusdam, quia voluptas quod quos
+                voluptatem quas.
+                <img src="icons/right-quote.svg" alt="right-icon" />
+              </p>
+              <img
+                src="images/testimonials/testimonials-1.jpg"
+                alt="First Testimonial"
+                class="section-testimonials__testimonial-img"
+              />
+              <div class="section-testimonials__group">
+                <h4 class="section-testimonials__testimonial-name">
+                  Saul Goodman
+                </h4>
+                <p class="section-testimonials__testimonial-position">
+                  Ceo & Founder
+                </p>
+              </div>
+            </div>
+            <div class="section-testimonials__testimonial">
+              <p
+                class="section-testimonials__testimonial-text general-size italic"
+              >
+                <img src="icons/left-quote.svg" alt="left-icon" />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. quos
+                voluptatem quas quibusdam, quia voluptas quod quos voluptatem
+                quas.
+                <img src="icons/right-quote.svg" alt="right-icon" />
+              </p>
+              <img
+                src="images/testimonials/testimonials-2.jpg"
+                alt="First Testimonial"
+                class="section-testimonials__testimonial-img"
+              />
+              <div class="section-testimonials__group">
+                <h4 class="section-testimonials__testimonial-name">
+                  Sara Wilsson
+                </h4>
+                <p class="section-testimonials__testimonial-position">
+                  Designer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-testimonials__circle">
+            <div class="section-testimonials__circle-item"></div>
+            <div class="section-testimonials__circle-item"></div>
+            <div class="section-testimonials__circle-item"></div>
+            <div class="section-testimonials__circle-item"></div>
+            <div
+              class="section-testimonials__circle-item section-testimonials__circle-item--active"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-contact">
+        <h2 class="section-heading">Contact</h2>
+        <div class="section-content">
+          <p class="general-size">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            doloremque eaque quam laudantium eveniet, itaque expedita tempora
+            minima voluptates rerum incidunt dignissimos et modi, placeat
+            aliquid adipisci sit iste nulla!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>portfolio </span></strong>
+        </div>
+        <div class="credits">
+  
+          Designed by Shailendra</a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
